@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Presentation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            background-image: url('./assets/slide\ bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        .changing-word::after {
+            content: "Developer";
+            animation: wordChange 6s infinite;
+            display: inline-block;
+            padding-left: 10px;
+  }
+
+        @keyframes wordChange {
+             0%   { content: "Coder"; }
+             25%  { content: "Developer"; }
+             50%  { content: "Programmer"; }
+             75% { content: "Builder"; }
+             100% { content: "Technologist";}
+  }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="px-2"><Span class="text-teal-500 text-4xl font-bold">IOTB</Span><span class="text-[#C49102] text-4xl font-bold">TECH</span>
+    </div>
+    <div>
+        <h1 class="flex justify-center items-center text-7xl font-bold text-white">The Erudite  <span class="changing-word"></span></h1>
+    </div>
+    <div class="flex flex-row min-h-[100vh] min-w-[100vw] justify-between items-center px-[12%] py-[2rem] space-x-10">
+          <div>
+            <div class="timeline-col">
+                <h2 class="flex items-center gap-2 text-5xl font-semibold">
+                    Profile
+                </h2>
+            </div>
+                <div class="timeline-box">
+                    <div class="flex flex-col gap-8 p-8 my-8 bg-blue-800 border-3 border-indigo-500 rounded-2xl text-sm">
+                        <div class="text-2xl uppercase">
+                            Introduction
+                        </div>
+                        <h3 class="text-xl font-bold">About Me</h3>
+                        <p>My name is <b>Owonikoko Hawau AnjolaAnnabi,</b> also known as EruditeDev in the tech space. I'm an aspiring Web Developer passionate about creating clean, interactive interfaces. Currently focused on front-end technologies like HTML, CSS, and JavaScript. Driven by creativity and curiosity, I'm building my path in the world of tech.</p>
+                    </div>
+
+                    
+                    <div class="flex flex-col gap-8 p-8 my-8 bg-blue-800 border-3 border-indigo-500 rounded-2xl text-sm">
+                        <div class="text-2xl uppercase">
+                            Skill
+                        </div>
+                        <h3 class="text-xl font-bold">Tech Stack</h3>
+                        <p>I'm building solid front-end skills with HTML and CSS as my core tools. Tailwind CSS makes styling faster and helps me create responsive layouts. I'm currently learning JavaScript to bring interactivity to my projects. Each step is a growth phase as I explore the world of web development.</p>
+                    </div>
+
+                    
+                    <div class="flex flex-col gap-8 p-8 my-8 bg-blue-800 border-3 border-indigo-500 rounded-2xl text-sm">
+                        <div class="text-2xl uppercase">
+                            Progress
+                        </div>
+                        <h3 class="text-xl font-bold">Learning Review</h3>
+                        <p>AlhamduliLlah! I've built a strong foundation in HTML and CSS, which allowed me to complete several projects. We then progressed to Tailwind CSS - although it was challenging at first, consistent practice helped me master it. Now, as we move into JavaScript, I'm able to understand the basics from what we've learned so far.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+            <div class="timeline-col">
+                <h2 class="flex items-center gap-2 text-5xl font-semibold">
+                    Builds
+                </h2>
+            </div>
+                  <div class="timeline-col">
+                    <div class="flex flex-col gap-8 p-8 my-8 bg-blue-800 border-3 border-indigo-500 rounded-2xl text-sm">
+                        <div class="text-xl uppercase">
+                            Project 1
+                        </div>
+                        <h3 class="text-xl font-bold">Figma to code</h3>
+                        <p>I translated a Figma design into a responsive web layout using HTML and Tailwind CSS. The Project focused on clean structure, mobile-first design, and utility-first styling. Tailwind CSS helped me replicate the design accurately and efficiently. It was a great step in improving my front-end and design implementation skills.</p>
+                        <a href="https://eruditegithub.github.io/Figma-Assignment/" class="underline text-white hover:text-red-500 text-xl">Access Project</a>
+                    </div>
+
+
+                    <div class="flex flex-col gap-8 p-8 my-8 bg-blue-800 border-3 border-indigo-500 rounded-2xl text-sm">
+                        <div class="text-2xl uppercase">
+                            Project 2
+                        </div>
+                        <h3 class="text-xl font-bold">Phoenix Project Check Form</h3>
+                        <p>This website features a form designed to evaluate user's understanding of Chapter 1 from the book <b>"The Phoenix Project"</b> recommended by IOTBTECH to its TECH Fellows. It serves as a debugging and reflection tool to reinforce key lessons from the chapter.</p>
+                        <a href="https://eruditegithub.github.io/TPP-Chapter1/" class="underline text-white hover:text-red-500 text-xl">Access Project</a>
+                    </div>
+
+                
+                    <div class="flex flex-col gap-8 p-8 my-8 bg-blue-800 border-3 border-indigo-500 rounded-2xl text-sm">
+                        <div class="text-2xl uppercase">
+                            Project 3
+                        </div>
+                        <h3 class="text-xl font-bold">Meal Muse - Food Website</h3>
+                        <p><b>Meal Muse</b> is a food-themed website created using HTML and styled with Tailwind CSS. It features engaging pages like Home, About, Snacks, and Blog. The site offers a delightful browsing experience with a variety of meal highlights and an especially captivating blog section filled with interesting food-related articles.</p>
+                        <a href="https://eruditegithub.github.io/My-Food-Website/" class="underline text-white hover:text-red-500 text-xl">Access Project</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
